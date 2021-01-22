@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style title="PurpleFreak Dark" description="A simple design crafted by JoyFreak.com" user_selectable="1" base_version_id="2020270" export_version="2">
+  <assets/>
+  <templates>
+    <template title="custom_extra.less" type="public" addon_id="" version_id="0" version_string=""><![CDATA[.block {
+    margin-bottom: 10px;
+}
+
+.p-nav-smallLogo {
+	display: block !important;
+	max-width: 150px;
+}
+
+.p-navgroup {
+	background: none;
+}
+
+.p-nav-inner {
+	background: #232323;
+	padding: 10px 0;
+}
+
+.p-sectionLinks-inner {
+	background: @xf-subNavBg;
+
+	border-bottom-right-radius: 7px;
+	border-bottom-left-radius: 7px;
+}
+
+.p-sectionLinks-list {
+    padding: 5px;
+}
+
+.p-navSticky.is-sticky .p-nav-inner {
+	box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.3);
+}
+
+.p-navSticky.is-sticky {
+    box-shadow: none;
+}
+
+.p-navgroup-link.is-menuOpen,
+.p-nav-list .p-navEl.is-menuOpen {
+    box-shadow: none !important;
+}
+
+.p-navgroup-link:hover {
+    background: none !important;
+	color: @xf-paletteColor5;
+}
+
+.p-footer-inner {
+	background: @xf-paletteColor5;
+}
+
+@media (max-width: (@xf-responsiveMedium)) {
+.p-navgroup-link {
+	padding: 8px 10px;
+}
+}
+
+@media (min-width: (@xf-responsiveMedium  + 1)) {
+.p-nav {
+	background: none;
+}
+.p-nav-smallLogo {
+    margin-left: 15px;
+}
+.p-body-inner {
+    padding-left: 0;
+    padding-right: 0;
+}
+.p-navSticky.is-sticky .p-nav-inner {
+	border-bottom-right-radius: 7px;
+	border-bottom-left-radius: 7px;
+}
+.p-footer-inner {
+	border-top-right-radius: 7px;
+	border-top-left-radius: 7px;
+}
+}
+
+.offCanvasMenu--nav .offCanvasMenu-header,
+.offCanvasMenu--nav .offCanvasMenu-subList {
+	background: @xf-paletteColor1;
+}
+
+a {
+	transition: all .15s ease-in !important;
+}
+
+a:hover {
+	color: @xf-paletteNeutral3 !important;
+	text-decoration: none !important;
+}
+
+.block-container {
+	border: none;
+	box-shadow: 0 4px 15px 0 rgba(0,0,0,0.2);
+}
+
+.p-footer {
+	color: @xf-paletteNeutral3;
+}]]></template>
+  </templates>
+  <properties>
+    <property property_name="blockFilterBar" group_name="block" title="Block filter bar" description="When the content of a block can be filtered, the controls to do so are styled here" property_type="css" value_type="" depends_on="" value_group="" display_order="20800" css_components="text,background,border,extra" addon_id="XF">
+      <value>{
+    "font-size": "@xf-fontSizeSmall",
+    "color": "@xf-majorHeadingTextColor",
+    "background-color": "#3e2f45",
+    "border-bottom-width": "@xf-borderSize",
+    "border-bottom-color": "@xf-borderColorHeavy"
+}</value>
+    </property>
+    <property property_name="blockHeader" group_name="block" title="Block header" description="Blocks often have title bars at their tops, which are styled here" property_type="css" value_type="" depends_on="" value_group="" display_order="20100" css_components="text,background,border,extra" addon_id="XF">
+      <value>{
+    "font-size": "@xf-fontSizeLarger",
+    "color": "@xf-paletteNeutral3",
+    "background-color": "@xf-paletteColor2",
+    "border-bottom-width": "@xf-borderSize",
+    "border-bottom-color": "@xf-borderColorLight"
+}</value>
+    </property>
+    <property property_name="blockTabHeader" group_name="block" title="Block tab header" description="Occasionally, blocks will have multi-part, tab headers, styled with these settings" property_type="css" value_type="" depends_on="" value_group="" display_order="20200" css_components="text,background,border,extra" addon_id="XF">
+      <value>{
+    "font-size": "@xf-fontSizeNormal",
+    "color": "@xf-paletteNeutral3",
+    "background-color": "@xf-blockTabHeaderBg",
+    "border-bottom-width": "@xf-borderSize",
+    "border-bottom-color": "@xf-borderColor"
+}</value>
+    </property>
+    <property property_name="blockTabHeaderSelected" group_name="block" title="Block tab header - selected tab" description="The selected tab in multi-part headers takes additional styling from here" property_type="css" value_type="" depends_on="" value_group="" display_order="20300" css_components="text,background,border_color_simple,extra" addon_id="XF">
+      <value>{
+    "color": "@xf-paletteNeutral3",
+    "border-color": "@xf-paletteColor2"
+}</value>
+    </property>
+    <property property_name="buttonTextColor" group_name="color" title="Default button text color" description="" property_type="value" value_type="color" depends_on="" value_group="buttons" display_order="8100" addon_id="XF">
+      <value>"@xf-paletteNeutral3"</value>
+    </property>
+    <property property_name="editorBg" group_name="rte" title="Editor background" description="The background for the editor before it is activated" property_type="value" value_type="color" depends_on="" value_group="" display_order="1001" addon_id="XF">
+      <value>"@xf-paletteColor5"</value>
+    </property>
+    <property property_name="inputBgColor" group_name="color" title="Text input box background color" description="" property_type="value" value_type="color" depends_on="" value_group="input" display_order="8500" addon_id="XF">
+      <value>"@xf-paletteColor5"</value>
+    </property>
+    <property property_name="pageBg" group_name="color" title="Page background color" description="The background of the page itself, on which all other content rests" property_type="value" value_type="color" depends_on="" value_group="contentBackground" display_order="2100" addon_id="XF">
+      <value>"#1D1D1D"</value>
+    </property>
+    <property property_name="paletteColor1" group_name="palette" title="Color 1" description="" property_type="value" value_type="color" depends_on="" value_group="primary" display_order="1000" addon_id="XF">
+      <value_parameters>hidePalette=true</value_parameters>
+      <value>"#3e2f45"</value>
+    </property>
+    <property property_name="paletteNeutral1" group_name="palette" title="Neutral 1" description="" property_type="value" value_type="color" depends_on="" value_group="neutral" display_order="3000" addon_id="XF">
+      <value_parameters>hidePalette=true</value_parameters>
+      <value>"#232323"</value>
+    </property>
+    <property property_name="paletteNeutral3" group_name="palette" title="Neutral 3" description="" property_type="value" value_type="color" depends_on="" value_group="neutral" display_order="3200" addon_id="XF">
+      <value_parameters>hidePalette=true</value_parameters>
+      <value>"#f5f2f6"</value>
+    </property>
+    <property property_name="publicFooterLink" group_name="footer" title="Footer links" description="Controls styling for individual links within the footer" property_type="css" value_type="" depends_on="" value_group="" display_order="20100" css_components="text,extra" addon_id="XF">
+      <value>{
+    "color": "@xf-paletteNeutral3"
+}</value>
+    </property>
+    <property property_name="publicNav" group_name="headerNav" title="Navigation row" description="The navigation row sits below the header and contains the primary site navigation tabs and menus" property_type="css" value_type="" depends_on="" value_group="" display_order="20100" css_components="text,background,extra" addon_id="XF">
+      <value>{
+    "color": "@xf-chromeTextColor",
+    "background-color": "#232323"
+}</value>
+    </property>
+    <property property_name="publicNavSelected" group_name="headerNav" title="Navigation row - selected tab" description="Additional styling to apply to navigation tabs when they are selected" property_type="css" value_type="" depends_on="" value_group="" display_order="20300" css_components="text,background,border,border_radius,extra" addon_id="XF">
+      <value>{
+    "color": "@xf-subNavTextColor",
+    "font-weight": "@xf-fontWeightHeavy",
+    "border-top-left-radius": "@xf-borderRadiusSmall",
+    "border-top-right-radius": "@xf-borderRadiusSmall"
+}</value>
+    </property>
+    <property property_name="publicNavTab" group_name="headerNav" title="Navigation row - tab" description="Controls the styling of individual tab elements within the navigation row" property_type="css" value_type="" depends_on="" value_group="" display_order="20200" css_components="text,background,extra" addon_id="XF">
+      <value>{
+    "color": "@xf-chromeTextColor",
+    "text-decoration": "none"
+}</value>
+    </property>
+    <property property_name="publicNavTabHover" group_name="headerNav" title="Navigation row - hovered tab" description="Additional styling to apply to navigation tabs when the pointer hovers over them" property_type="css" value_type="" depends_on="" value_group="" display_order="20400" css_components="text,background,extra" addon_id="XF">
+      <value>{
+    "color": "@xf-paletteNeutral3",
+    "text-decoration": "none"
+}</value>
+    </property>
+    <property property_name="publicStaffBar" group_name="headerNav" title="Staff tools bar" description="Visible only to staff, the staff tools bar sits above the header and contains items such as reported content, the moderation queue..." property_type="css" value_type="" depends_on="" value_group="" display_order="20700" css_components="text,background,border,extra" addon_id="XF">
+      <value>{
+    "font-size": "@xf-fontSizeSmall",
+    "color": "@xf-paletteNeutral3",
+    "background-color": "@xf-paletteColor5",
+    "border-bottom-width": "@xf-borderSize",
+    "border-bottom-color": "xf-intensify(@xf-publicStaffBar--background-color, 4%)"
+}</value>
+    </property>
+    <property property_name="publicSubNav" group_name="headerNav" title="Sub-navigation row" description="Below the main navigation row, this row shows content associated with the selected main navigation tab" property_type="css" value_type="" depends_on="" value_group="" display_order="20500" css_components="text,background,border,extra" addon_id="XF">
+      <value>{
+    "font-size": "@xf-fontSizeSmall",
+    "color": "@xf-subNavTextColor"
+}</value>
+    </property>
+    <property property_name="styleType" group_name="palette" title="Style type" description="This defines the general type of style in use based on whether the content is placed on a light or dark background. This may change how colors are selected in certain scenarios." property_type="value" value_type="radio" depends_on="" value_group="setup" display_order="100" addon_id="XF">
+      <value_parameters>light={{ phrase('light') }}
+dark={{ phrase('dark') }}</value_parameters>
+      <value>"dark"</value>
+    </property>
+  </properties>
+</style>
